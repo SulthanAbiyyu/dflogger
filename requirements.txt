@@ -5,3 +5,4 @@
 click
 coverage
 flake8
+pandas
