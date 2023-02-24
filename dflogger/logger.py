@@ -79,9 +79,14 @@ class Logger:
             best_run = self._df[self._df[f"{metric}"] == self.best_score(
                 metric)]["run"].values[0]
 
-        return self._df[self._df["run"] == best_run].iloc[0] \
+        params = self._df[self._df["run"] == best_run].iloc[0] \
             .drop([metric for metric in self._df.columns if "metric" in metric]) \
-            .to_dict()
+            .drop(["run"]) \
+
+        params.index = [col.split("_", 1)[1] for col in params.index]
+        params = params.to_dict()
+
+        return params
 
     def get_df(self) -> pd.DataFrame:
         clean_col = [
