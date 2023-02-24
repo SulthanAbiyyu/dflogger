@@ -2,8 +2,8 @@ from setuptools import find_packages, setup
 
 setup(
     name='dflogger',
-    packages=['dflogger.logger'],
-    version='0.1.1',
+    packages=['dflogger'],
+    version='0.1.2',
     description='small and dataframe based machine learning experiment logger',
     author='Sulthan Abiyyu',
     license='MIT',
