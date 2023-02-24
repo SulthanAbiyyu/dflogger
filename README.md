@@ -1,6 +1,6 @@
 # dflogger
 
-When you feel like any existing experiment tracker tools are overpowered, then dflogger is what you're looking for
+When you feel like any existing machine learning experiment tracker tools are overpowered, then dflogger is what you're looking for
 
 ## Installation
 
